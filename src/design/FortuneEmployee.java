@@ -1,6 +1,11 @@
 package design;
 
-public class FortuneEmployee {
+public  class FortuneEmployee {
+
+	public  FortuneEmployee() {
+
+
+	}
 
 	/**
 	 * FortuneEmployee class has a main methods where you will be able to create Object from
@@ -14,6 +19,8 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
+
+
 		
 
 

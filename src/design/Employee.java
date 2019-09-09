@@ -10,6 +10,9 @@ public interface Employee {
 	
 	//employeeId() will return employee id.
 	public int employeeId();
+
+
+
 	
 	//employeeName() will return employee name
 	public String employeeName();

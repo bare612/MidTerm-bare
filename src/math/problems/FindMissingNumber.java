@@ -1,5 +1,7 @@
 package math.problems;
 
+import java.util.Arrays;
+
 /**
  * Created by mrahman on 04/22/17.
  */
@@ -12,6 +14,12 @@ public class FindMissingNumber {
          * Write java code to find the missing number from the array. Write static helper method to find it.
          */
          int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
+         int lastNumber = 10;
+         int sumOfProductInHalf = (lastNumber *(lastNumber+1)/2);
+          int sumOfNumbersInArray = Arrays.stream(array).sum();
+
+          int numberMissed = sumOfProductInHalf - sumOfNumbersInArray;
+        System.out.println("The missing in the array is"+numberMissed);
 
     }
 }
