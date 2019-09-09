@@ -35,7 +35,10 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
-
+        for(int i=0;i<list.length;i++){
+            int numToSort = list[i];
+            int temp;
+        }
 
 
         final long endTime = System.currentTimeMillis();
@@ -67,8 +70,6 @@ public class Sort {
     public int [] quickSort(int [] array){
         int [] list = array;
         //implement here
-        
-        
 
         return list;
     }

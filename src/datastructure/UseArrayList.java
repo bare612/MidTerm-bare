@@ -15,6 +15,7 @@ public class UseArrayList {
 		 *
 		 */
 		List<String> statesOfusa = new ArrayList<>();
+		// adding data
 		statesOfusa.add("NY");
 		statesOfusa.add("VA");
 		statesOfusa.add("AR");
@@ -28,7 +29,7 @@ public class UseArrayList {
 		map.put("USA", statesOfusa);
 		map.put("Canada", statesOfCanada);
 
-
+     // retrieving data
 		for (Map.Entry<String, List<String>> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + "" + entry.getValue());
 

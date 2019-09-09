@@ -22,7 +22,8 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
-	static String companyName;
+	   static String companyName;
+
 
 
 
@@ -32,7 +33,7 @@ public class EmployeeInfo {
 	 * as you will come up with the new ideas.
 	 */
 
-	public EmployeeInfo() {
+	  public EmployeeInfo() {
 	}
 
 	/*
@@ -83,6 +84,8 @@ public class EmployeeInfo {
 
 		return total;
 	}
+
+
 
 	private static class DateConversion {
 
