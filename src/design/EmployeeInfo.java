@@ -2,8 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
-
+public class EmployeeInfo extends AbstractEmployee{
 
 
 	/*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
@@ -22,7 +21,13 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
-	   static String companyName;
+	static String companyName;
+	private int employeeId;
+	private String employeeName;
+	private String departmentName;
+	private double salary;
+	private int performance;
+
 
 
 
@@ -33,21 +38,70 @@ public class EmployeeInfo {
 	 * as you will come up with the new ideas.
 	 */
 
-	  public EmployeeInfo() {
+	public EmployeeInfo(int employeeId) {
+		this.employeeId = employeeId;
+
 	}
 
 	/*
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId) {
+	public EmployeeInfo(String employeeName, int employeeId) {
+		this.employeeName = employeeName;
+		this.employeeId = employeeId;
+
 
 
 	}
 
-	public EmployeeInfo(String name, int employeeId) {
+	public static void calculateEmployeePension(double salary) {
+	}
+
+	public void setEmployeeId(String name, int employeeId) {
+		this.employeeId = employeeId;
+
+
 
 	}
+      public void setEmployeeName(String employeeName){
+
+	  }
+	  public double getSalary() {
+		return salary;
+	  }
+	  public void setSalary(double salary){
+		this.salary = salary;
+	  }
+	  public int getPerformance() {
+		return performance;
+	  }
+	  public void setPerformance(int performance) {
+		this.performance = performance;
+	  }
+	  public void assignDepartment(String departmentName){
+		this.departmentName = departmentName;
+	  }
+	  public String getDepartmentName(){
+		return departmentName;
+	  }
+
+	  public void typeOfCompany(){
+		companyName = "SomaTech";
+		  System.out.println("1999 + LeaderName+ " + companyName +"located at + address" +",");
+
+	  }
+
+	@Override
+	public void typeOfCompany(String Mission) {
+		System.out.println(Mission);
+	}
+
+	@Override
+	public void calculateSalary(double salary) {
+
+	}
+
 
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
@@ -61,6 +115,27 @@ public class EmployeeInfo {
 		int total = 0;
 		return total;
 	}
+	public static double  calculateEmployeeBonus(double salary,int performance){
+		double yearlyBonus = 0;
+		if(performance == 5){
+			yearlyBonus = salary * 0.1 * 12;
+		}else if (performance == 4) {
+			yearlyBonus = salary * 0.06 * 12;
+
+		}else if(performance == 3){
+			yearlyBonus = salary * 0.04 * 12;
+
+		}else  if(performance == 2){
+			yearlyBonus = 0;
+		}else {
+			yearlyBonus = 2;
+			System.out.println("You are Done !");
+		}
+		return yearlyBonus;
+
+
+	}
+
 
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
@@ -68,86 +143,129 @@ public class EmployeeInfo {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 *
 	 */
-	public static int calculateEmployeePension() {
-		int total = 0;
+	public static double calculateEmployeePension(double salary, int performance){
+		double total = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter start date in format (example: May,2015): ");
+		System.out.println("Please enter start date in format (example: May,2017): ");
 		String joiningDate = sc.nextLine();
-		System.out.println("Please enter today's date in format (example: August,2017): ");
+		System.out.println("Please enter today's date in format (example: sep,10,2019): ");
 		String todaysDate = sc.nextLine();
 		String convertedJoiningDate = DateConversion.convertDate(joiningDate);
 		String convertedTodaysDate = DateConversion.convertDate(todaysDate);
 
 		//implement numbers of year from above two dates
 		//Calculate pension
+		double start = Integer.parseInt(convertedJoiningDate);
+		double current = Integer.parseInt(convertedTodaysDate);
+
+		double numberOfYears = current - start;
+
+		if (numberOfYears >= 5) {
+			total = salary * .25;
+		} else if (4 == numberOfYears) {
+			total = salary * .20;
+		} else if (numberOfYears == 3) {
+			total = salary * .15;
+		} else if (numberOfYears == 2) {
+			total = salary * .10;
+		} else if (numberOfYears == 1) {
+			total = salary * .05;
+		} else if (numberOfYears == 0) {
+			total = 0;
+		}
+		System.out.println("Total pension: $" + total);
 
 
 		return total;
 	}
 
 
-
-	private static class DateConversion {
-
-		public DateConversion(Months months) {
-		}
-
-		public static String convertDate(String date) {
-			String[] extractMonth = date.split(",");
-			String givenMonth = extractMonth[0];
-			int monthDate = whichMonth(givenMonth);
-			String actualDate = monthDate + "/" + extractMonth[1];
-			return actualDate;
-		}
-
-		public static int whichMonth(String givenMonth) {
-			Months months = Months.valueOf(givenMonth);
-			int date = 0;
-			switch (months) {
-				case January:
-					date = 1;
-					break;
-				case February:
-					date = 2;
-					break;
-				case March:
-					date = 3;
-					break;
-				case April:
-					date = 4;
-					break;
-				case May:
-					date = 5;
-					break;
-				case June:
-					date = 6;
-					break;
-				case July:
-					date = 1;
-					break;
-				case August:
-					date = 1;
-					break;
-				case September:
-					date = 1;
-					break;
-				case October:
-					date = 1;
-					break;
-				case November:
-					date = 1;
-					break;
-				case December:
-					date = 1;
-					break;
-				default:
-					date = 0;
-					break;
-			}
-			return date;
-
-		}
+	@Override
+	public int employeeId() {
+		return 0;
 	}
 
-}
+	@Override
+	public String employeeName() {
+		return null;
+	}
+
+	@Override
+	public void assignDepartment() {
+
+	}
+
+	@Override
+	public int calculateSalary() {
+		return 0;
+	}
+
+	@Override
+	public void benefitLayout() {
+
+	}
+
+	private static  class DateConversion {
+
+			public   DateConversion(Months months) {}
+			public static String convertDate(String date) {
+				String[] extractMonth = date.split(",");
+				String givenMonth = extractMonth[0];
+				int monthDate = whichMonth(givenMonth);
+				String actualDate = monthDate + "/" + extractMonth[1];
+				return actualDate;
+			}
+
+			public static int whichMonth(String givenMonth) {
+				Months months = Months.valueOf(givenMonth);
+				int date = 0;
+				switch (months) {
+					case January:
+						date = 1;
+						break;
+					case February:
+						date = 2;
+						break;
+					case March:
+						date = 3;
+						break;
+					case April:
+						date = 4;
+						break;
+					case May:
+						date = 5;
+						break;
+					case June:
+						date = 6;
+						break;
+					case July:
+						date = 1;
+						break;
+					case August:
+						date = 1;
+						break;
+					case September:
+						date = 1;
+						break;
+					case October:
+						date = 1;
+						break;
+					case November:
+						date = 1;
+						break;
+					case December:
+						date = 1;
+						break;
+					default:
+						date = 0;
+						break;
+				}
+				return date;
+
+			}
+		}
+
+	}
+
+
 

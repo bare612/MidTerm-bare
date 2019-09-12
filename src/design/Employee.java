@@ -12,8 +12,6 @@ public interface Employee {
 	public int employeeId();
 
 
-
-	
 	//employeeName() will return employee name
 	public String employeeName();
 	

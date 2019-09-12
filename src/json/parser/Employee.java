@@ -16,10 +16,12 @@ public class Employee {
     }
 
     public String getEmpEmail() {
+
         return empEmail;
     }
 
     public void setEmpEmail(String empEmail) {
+
         this.empEmail = empEmail;
     }
 
@@ -28,6 +30,7 @@ public class Employee {
     }
 
     public void setEmpName(String empName) {
+
         this.empName = empName;
     }
 
@@ -36,6 +39,7 @@ public class Employee {
     }
 
     public void setSalary(String salary) {
+
         this.salary = salary;
     }
 

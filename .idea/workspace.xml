@@ -2,25 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584f81b2-31cb-4576-bc72-6d673ff767f2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/design/AbstractEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJuly2019/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJuly2019/definition/data-structure-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructure/UseArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructure/UseArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/src/definition/data-structure-questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/design/EmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/EmployeeInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/design/FortuneEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/FortuneEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/Anagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/DetermineLargestWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/DetermineLargestWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/DuplicateWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/DuplicateWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/parser/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/parser/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/problems/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,12 +38,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib" />
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="design" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/codelab/status" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -56,23 +61,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DuplicateWord">
+  <component name="RunManager" selected="Application.FortuneEmployee">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.problems.Anagram" />
-      <module name="CodingExamJuly2019" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,13 +96,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.problems.Palindrome" />
+    <configuration name="FortuneEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design.FortuneEmployee" />
       <module name="CodingExamJuly2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.problems.*" />
+          <option name="PATTERN" value="design.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonReaderUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="json.parser.JsonReaderUtil" />
+      <module name="CodingExamJuly2019" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="json.parser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,6 +131,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="string.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTestingEmployeeInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design.UnitTestingEmployeeInfo" />
+      <module name="CodingExamJuly2019" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,17 +176,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.DetermineLargestWord" />
-      <item itemvalue="Application.Anagram" />
-      <item itemvalue="Application.Palindrome" />
       <item itemvalue="Application.Permutation" />
       <item itemvalue="Application.DuplicateWord" />
+      <item itemvalue="Application.JsonReaderUtil" />
+      <item itemvalue="Application.FortuneEmployee" />
+      <item itemvalue="Application.UnitTestingEmployeeInfo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DuplicateWord" />
+        <item itemvalue="Application.FortuneEmployee" />
+        <item itemvalue="Application.UnitTestingEmployeeInfo" />
         <item itemvalue="Application.Permutation" />
-        <item itemvalue="Application.Palindrome" />
-        <item itemvalue="Application.Anagram" />
+        <item itemvalue="Application.JsonReaderUtil" />
+        <item itemvalue="Application.DuplicateWord" />
       </list>
     </recent_temporary>
   </component>

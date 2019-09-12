@@ -17,7 +17,7 @@ public class Palindrome {
     public static void checkpalindrome(String word){
         String readToBack = "";
         int wordLength = word.length();
-        for(int i = wordLength-1; i>=0; i--) {
+        for(int i = wordLength-1; i >=0; i--) {
             readToBack = readToBack + word.charAt(i);
             if (word.equals(readToBack)) ;
             System.out.println("The word you entered is palindrome");
